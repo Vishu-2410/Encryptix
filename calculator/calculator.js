@@ -26,8 +26,14 @@ function updateDisplay(){
 //function to calculate the result
 function calculateResult(){
     try{
+        if(displayValue==''){
+            //if display value is empty
+            alert('please enter a valid expression');
+        }
+        else{
         //it calculate the result
         displayValue=eval(displayValue).toString();
+        }
     }
     catch(err){
         //if error occurs
